@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+venv/
+.env
+
+# Docker
+*.pid
+*.sock
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Pytest / coverage
+.coverage
+htmlcov/
+
+# Celery
+celerybeat-schedule
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python version files
+.python-version
+
+# Env variants
+.env.*

@@ -1,0 +1,10 @@
+fastapi[standard]
+uvicorn
+celery
+redis
+pydantic>=2.6,<3
+python-dotenv
+flower
+
+langchain
+langchain-openai
