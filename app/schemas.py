@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, RootModel
 from typing import List, Literal
 
 class JobInput(BaseModel):
@@ -10,5 +10,5 @@ class Question(BaseModel):
     question_type: Literal["normal", "knockout"]
     answer_prompting: str
 
-class QuestionList(BaseModel):
-    __root__: List[Question]
+class QuestionList(RootModel[List[Question]]):
+    pass
